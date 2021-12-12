@@ -4,12 +4,12 @@
 
 const std::string GameOverState::s_gameOverID = "GAME OVER";
 GameOverState* GameOverState::s_pInstance = nullptr;
-
+// MenuState coll
 void GameOverState::s_gameOverToMain()
 {
 	TheGame::Instance()->getStateMachine()->changeState(MenuState::Instance());
 }
-
+// PlayState coll
 void GameOverState::s_restartPlay()
 {
 	TheGame::Instance()->getStateMachine()->changeState(PlayState::Instance());
@@ -34,7 +34,7 @@ void GameOverState::render()
 	}
 }
 
-
+// GameOverState Start
 bool GameOverState::onEnter()
 {
 	if (!TheTextureManager::Instance()->load("Assets/Menupan.png", "Menupan", TheGame::Instance()->getRenderer()))
@@ -60,7 +60,7 @@ bool GameOverState::onEnter()
 	std::cout << "Entering PauseSate" << std::endl;
 	return true;
 }
-
+// GameOverState end
 bool GameOverState::onExit()
 {
 	
@@ -77,7 +77,7 @@ bool GameOverState::onExit()
 
 	return true;
 }
-
+// Game Camera fixation
 void GameOverState::camera()
 {
 	TheCamera::Instance()->getCameraRectX(0);

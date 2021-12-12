@@ -1,10 +1,11 @@
 #include "GameStateMachine.h"
 
+
 void GameStateMachine::popState()
 {
 	changeState(m_prevState);
 }
-
+// Coming in State
 void GameStateMachine::changeState(GameState* pState)
 {
 	if (pState != NULL)

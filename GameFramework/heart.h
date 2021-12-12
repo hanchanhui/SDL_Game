@@ -13,9 +13,5 @@ public:
     virtual void clean();
     
 
-
-private:
-    
-
 };
 

@@ -11,7 +11,6 @@ public:
 	virtual void clean();
 	void DownBoxCollision();
 	void arr();
-	//void arrcheck();
 
 private:
  

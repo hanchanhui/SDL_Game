@@ -13,6 +13,7 @@
 const std::string PlayState::s_playID = "PLAY";
 PlayState* PlayState::s_pInstance = nullptr;
 
+// new two-dimensional array and variable init
 PlayState::PlayState() : AniCount(0), random(0), randomValue(10), GameBoxStop(false), GameEnding(false), ReRandom(0)
 {
 	map = new int* [ARR1];
@@ -34,6 +35,7 @@ PlayState::PlayState() : AniCount(0), random(0), randomValue(10), GameBoxStop(fa
 	heartAni[2] = 4;
 }
 
+// two-dimensional array delete
 PlayState::~PlayState()
 {
 	for (int i = 0; i < ARR1; i++)
@@ -43,13 +45,15 @@ PlayState::~PlayState()
 	delete[] map;
 }
 
+// PlayState Start
 bool PlayState::onEnter()
 {
+	//Sound
 	Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048);
 	_bgm = Mix_LoadMUS("Assets/_bgm.mp3");
 	Mix_VolumeMusic(3);
 	Mix_PlayMusic(_bgm, -1);
-
+	//load
 	std::cout << "entering PlayState" << std::endl;
 	if (!TheTextureManager::Instance()->load("Assets/Player.png", "Player", TheGame::Instance()->getRenderer()))
 	{
@@ -164,7 +168,7 @@ void PlayState::update()
 	
 }
 
-// 떨어지는 블록
+// Down blocks
 void PlayState::Random()
 {
 	srand((unsigned int)time(NULL));
@@ -183,7 +187,7 @@ void PlayState::Random()
 		_timer.resume();
 	}
 }
-// 장애물 난이도 설정
+// Set the difficulty level of difficulty
 void PlayState::RandomVal()
 {
 	for (int i = 0; i < 17; i++) {
@@ -200,20 +204,20 @@ void PlayState::RandomVal()
 
 			if (map[6][j] == 1)
 			{
-				_timer.setInterval(1000);
+				_timer.setInterval(900);
 			}
 			else if (map[10][j] == 1)
 			{
-				_timer.setInterval(500);
+				_timer.setInterval(400);
 			}
 			else if (map[14][j] == 1)
 			{
-				_timer.setInterval(700);
+				_timer.setInterval(600);
 			}
 		}
 	}
 }
-// 게임 엔딩
+// Game Ending
 void PlayState::GamesEnding()
 {
 	if (GameBoxStop)
@@ -231,7 +235,7 @@ void PlayState::GamesEnding()
 		}
 	}
 }
-
+// playState end
 bool PlayState::onExit()
 {
 	std::cout << "exiting PlayState" << std::endl;

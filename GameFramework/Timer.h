@@ -9,10 +9,10 @@ public:
 	~Timer() {}
 
 	void setInterval(int interval) { this->interval = interval; }
-	void start() { startTick = SDL_GetTicks(); } // 시작 시간
-	void pause() { if (pauseTick == 0) { pauseTick = SDL_GetTicks(); } } // 정지된 시간
-	void resume() { if (pauseTick != 0) { startTick += SDL_GetTicks() - pauseTick;  pauseTick = 0; } } // 잠복 시간
-	bool done() { if (pauseTick == 0 && SDL_GetTicks() - startTick >= interval) { start(); return true; }return false; } // 정지하는 시간
+	void start() { startTick = SDL_GetTicks(); } // start time.
+	void pause() { if (pauseTick == 0) { pauseTick = SDL_GetTicks(); } } // Time stopped
+	void resume() { if (pauseTick != 0) { startTick += SDL_GetTicks() - pauseTick;  pauseTick = 0; } } // Latent time
+	bool done() { if (pauseTick == 0 && SDL_GetTicks() - startTick >= interval) { start(); return true; }return false; } // Time to stop
 
 	int getstart() { return startTick; }
 

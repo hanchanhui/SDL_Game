@@ -30,7 +30,7 @@ void MenuState::render()
 	}
 
 }
-
+// MenuState Start
 bool MenuState::onEnter()
 {
 	std::cout << "entering MenuState" << std::endl;
@@ -51,7 +51,7 @@ bool MenuState::onEnter()
 
 	return true;
 }
-
+// MenuState end
 bool MenuState::onExit()
 {
 	TheTextureManager::Instance()->clearFromTextureMap("PlayButton");
@@ -60,19 +60,19 @@ bool MenuState::onExit()
 	std::cout << "exiting MenuState" << std::endl;
 	return true;
 }
-
+// PlayState coll
 void MenuState::s_menuToPlay()
 {
 	std::cout << "Play Button Clicked" << std::endl;
 	TheGame::Instance()->getStateMachine()->changeState(PlayState::Instance());
 }
-
+// Game Exit
 void MenuState::s_exitFromMenu()
 {
 	std::cout << "Exit Button Clicked" << std::endl;
 	TheGame::Instance()->quit();
 }
-
+// Game Camera fixation
 void MenuState::camera()
 {
 	TheCamera::Instance()->getCameraRectX(0);

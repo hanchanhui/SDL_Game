@@ -4,7 +4,7 @@
 #include "Camera.h"
 
 
-Player::Player(const LoaderParams* pParams) : SDLGameObject(pParams) , isGrounded(0) , ground(0), attack(true), HP(3)
+Player::Player(const LoaderParams* pParams) : SDLGameObject(pParams) , isGrounded(0) , attack(true), HP(2)
 {
     _timer.setInterval(3000);
     
@@ -13,6 +13,7 @@ Player::Player(const LoaderParams* pParams) : SDLGameObject(pParams) , isGrounde
 
 void Player::draw()
 {
+  // Idle ani and Run ani
   if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_RIGHT))
   {
     SDLGameObject::drawFrame();
@@ -35,7 +36,7 @@ void Player::update()
   checkCollision();
   CameraMove();
   
-
+  // invincibility sprite and timer
   if (TheTextureManager::Instance()->getPlayerColCheck())
   {
       Transparency();
@@ -45,12 +46,13 @@ void Player::update()
       _timer.resume();
   }
 
+  // Game Over
   GameOver();
   
   SDLGameObject::update();
 }
 
-
+// Move
 void Player::handleInput()
 {
 
@@ -58,15 +60,11 @@ void Player::handleInput()
   {
     flip = SDL_FLIP_NONE;
     m_velocity.setX(2);
-    ground += 1;
-    
   }
   else if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_LEFT)) 
   {
     flip = SDL_FLIP_HORIZONTAL;
-    m_velocity.setX(-2);
-    ground -= 1;
-    
+    m_velocity.setX(-2);  
   }
   else
   {
@@ -75,7 +73,7 @@ void Player::handleInput()
   
   if(TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_UP) &&m_velocity.getY() >= 0)
   {
-      // 더블 점프 구현
+      // Double Jump
     if(isGrounded < 2)
     {
         if (isGrounded == 0) {
@@ -105,7 +103,7 @@ void Player::checkCollision()
   int plyTop = m_position.getY();
   int plyBottom = plyTop + m_height;
 
-  // 바닥과 충돌
+  // Colliding with the wall
   for(int i = 0; i < collWall.size(); i++)
   {
     int wallLeft = dynamic_cast<SDLGameObject*>(collWall[i])->GetPos().getX();
@@ -147,7 +145,7 @@ void Player::checkCollision()
       }
     } 
    }
-  // 떨어지는 박스와 충돌
+  // Collision with falling box
   for (int i = 0; i < collDownBox.size(); i++)
   {
       int boxLeft = dynamic_cast<SDLGameObject*>(collDownBox[i])->GetPos().getX();
@@ -202,7 +200,7 @@ void Player::checkCollision()
       }
   }
     
-    // 핸드폰 밖으로 나가지 못하게 설정
+    //  not go out phone
     
     if ((m_position.getX() < 350 && TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_LEFT))
         || (m_position.getX() > 788 && TheInputHandler::Instance()->isKeyDown(SDL_SCANCODE_RIGHT)))
@@ -216,13 +214,13 @@ void Player::checkCollision()
         m_velocity.setY(0);
     }
 }
-
+// Player basics Gravity
 void Player::Gravity(float gravity)
 {
   m_acceleration.setY(gravity);
 }
 
-
+// Camera Move
 void Player::CameraMove()
 {
   TheCamera::Instance()->getCameraRectX(m_position.getX() + (m_width / 2) - 387);
@@ -245,7 +243,7 @@ void Player::CameraMove()
 
 
 
-// 무적 시간
+// Invincible time
 void Player::Transparency()
 {
     
@@ -265,19 +263,19 @@ void Player::clean()
   
 }
 
-// 게임 오버
+// Game Over
 void Player::GameOver()
 {
-    if (HP <= 0)
+    if (HP < 0)
     {
         PlayState::Instance()->SetHeartAni(0, 1);
         TheGame::Instance()->getStateMachine()->changeState(GameOverState::Instance());
     }
-    else if (HP == 1)
+    else if (HP == 0)
     {
         PlayState::Instance()->SetHeartAni(1, 3);
     }
-    else if (HP == 2)
+    else if (HP == 1)
     {
         PlayState::Instance()->SetHeartAni(2, 5);
     }

@@ -20,12 +20,18 @@ C:\Users\stayr\Desktop\gf-20181290\GameFramework\DownBox.cpp(87,41): warning C42
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\DownBox.cpp(88,41): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\DownBox.cpp(95,33): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\DownBox.cpp(96,41): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Game.cpp
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Vector2D.h(13,33): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Timer.h(15,65): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
   GameOverState.cpp
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Vector2D.h(13,33): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Timer.h(15,65): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\GameOverState.cpp(21,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\GameOverState.cpp(31,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\GameOverState.cpp(67,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  GameStateMachine.cpp
+  MenuButton.cpp
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Vector2D.h(13,33): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   MenuState.cpp
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Vector2D.h(13,33): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Timer.h(15,65): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
@@ -34,41 +40,41 @@ C:\Users\stayr\Desktop\gf-20181290\GameFramework\MenuState.cpp(27,20): warning C
   PlayState.cpp
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Vector2D.h(13,33): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Timer.h(15,65): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(119,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(124,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(134,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(139,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(144,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(149,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(227,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(238,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(241,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(244,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(123,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(128,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(138,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(143,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(148,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(153,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(231,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(242,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(245,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\PlayState.cpp(248,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Player.cpp
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Vector2D.h(13,33): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Timer.h(15,65): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(103,15): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(105,14): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(109,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(111,18): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(113,17): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(120,33): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(121,33): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(130,25): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(131,33): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(140,27): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(145,34): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(151,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(153,19): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(101,15): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(103,14): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(107,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(109,18): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(111,17): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(118,33): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(119,33): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(128,25): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(129,33): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(138,27): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(143,34): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(149,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(151,19): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(153,18): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(155,18): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(157,18): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(164,42): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(165,43): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(191,44): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(198,53): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(228,75): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(229,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(162,42): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(163,43): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(189,44): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(196,53): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(226,75): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\stayr\Desktop\gf-20181290\GameFramework\Player.cpp(227,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   heart.cpp
 C:\Users\stayr\Desktop\gf-20181290\GameFramework\Timer.h(15,65): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
   코드를 생성하고 있습니다...

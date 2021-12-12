@@ -29,7 +29,7 @@ void DownBox::DownBoxCollision()
     int boxRight = boxLeft + m_width;
     int boxTop = m_position.getY();
     int boxBottom = boxTop + m_height;
-
+    // wall and block crash
     for (int i = 0; i < collWall.size(); i++)
     {
         int wallLeft = dynamic_cast<SDLGameObject*>(collWall[i])->GetPos().getX();
@@ -71,7 +71,7 @@ void DownBox::DownBoxCollision()
         }
 
     }
-
+    // Blocks and block crash
     for (int i = 0; i < collDownBox.size(); i++)
     {
         int DownLeft = dynamic_cast<SDLGameObject*>(collDownBox[i])->GetPos().getX();
@@ -104,7 +104,7 @@ void DownBox::DownBoxCollision()
     }
 }
 
-// 이차원 배열로 블록이 쌓여는지 확인 여부
+// two-dimensional array block check
 void DownBox::arr()
 {
     for (int i = 0; i < 17; i++)
@@ -116,27 +116,12 @@ void DownBox::arr()
                 if ((m_position.getX() == (360 + (j * 48))) && (m_position.getY() == (94 + (i * 48))))
                 {
                     PlayState::Instance()->setMap(i, j, 1);
-                    //arrcheck();
                 }
             }
 
         }
     }
 }
-
-/*
-void DownBox::arrcheck()
-{
-    std::cout << "map[i][j] = " << std::endl;
-    for (int i = 0; i < 17; i++)
-    {
-        for (int j = 0; j < 10; j++)
-        {
-            std::cout << PlayState::Instance()->getMap(i, j) << " ";
-        }
-        std::cout << std::endl;
-    }
-}*/
 
 
 void DownBox::clean()

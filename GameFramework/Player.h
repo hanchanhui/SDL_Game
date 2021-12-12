@@ -29,7 +29,6 @@ public:
 
 private:
 	int isGrounded;
-	int ground;
 	bool attack;
 
 	Timer _timer;
