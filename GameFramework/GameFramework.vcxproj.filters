@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{882bcb6e-48c7-445c-87c7-7597208a8a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{a0e6fe07-2cf0-4466-8465-5b44e7869c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector2D">
+      <UniqueIdentifier>{7e3fdb59-da96-43a0-b8b2-0edfc3c56239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{088f26c8-b86e-4009-8ad1-63b67a793a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sharing">
+      <UniqueIdentifier>{f0e50da8-ae7d-4f0e-9e6a-cbb154f0de81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{414b0dfe-9d4f-4a69-a24a-badea2680a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu.h">
+      <UniqueIdentifier>{47ed251d-d859-42a2-8c5c-c540bb8fe37d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu.cpp">
+      <UniqueIdentifier>{b90d9f7f-5180-44a7-bfa1-a8ff5eef2418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager.h">
+      <UniqueIdentifier>{8cf1b45e-f26c-4186-8e08-37b3b55ba100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager.cpp">
+      <UniqueIdentifier>{9e758eb9-3ba4-48dc-8ab5-536170d9e147}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>Vector2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="DownBox.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>Menu.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuButton.cpp">
+      <Filter>Menu.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateMachine.cpp">
+      <Filter>Menu.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayState.cpp">
+      <Filter>Menu.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverState.cpp">
+      <Filter>Menu.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="heart.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Manager.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>Manager.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLGameObject.cpp">
+      <Filter>Manager.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Manager.cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Vector2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Manager.h</Filter>
+    </ClInclude>
+    <ClInclude Include="LoaderParams.h">
+      <Filter>Manager.h</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLGameObject.h">
+      <Filter>Manager.h</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>Manager.h</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Manager.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Manager.h</Filter>
+    </ClInclude>
+    <ClInclude Include="DownBox.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Sharing</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>Menu.h</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuButton.h">
+      <Filter>Menu.h</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateMachine.h">
+      <Filter>Menu.h</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Menu.h</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayState.h">
+      <Filter>Menu.h</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverState.h">
+      <Filter>Menu.h</Filter>
+    </ClInclude>
+    <ClInclude Include="heart.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
